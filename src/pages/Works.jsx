@@ -84,6 +84,8 @@ const CATEGORIES = [
   { id: "mixing", label: "Mixing", keywords: ["mixing"] },
   { id: "mastering", label: "Mastering", keywords: ["mastering"] },
   { id: "immersive", label: "Immersive", keywords: ["immersive", "dolby", "spatial"] },
+  { id: "sound-for-picture", label: "Sound for Picture", keywords: ["sound for picture", "scoring", "film"] },
+  { id: "recording", label: "Recording", keywords: ["recording"] },
 ];
 
 /* -----------------------------------------
@@ -265,6 +267,12 @@ export default function Works() {
                                     </span>
                                 ))}
                              </div>
+
+                             {selectedWork.description && (
+                                <p className="text-sm leading-relaxed opacity-80 whitespace-pre-wrap">
+                                    {selectedWork.description}
+                                </p>
+                             )}
 
                              <EmbedPlayer work={selectedWork} />
 

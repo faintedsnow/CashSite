@@ -253,14 +253,15 @@
     "link": "https://youtube.com/watch?v=Fq6tn8BmcSc",
     "type": "youtube",
     "embedId": "Fq6tn8BmcSc",
-    "img": "/assets/CoverJacket/バブル【〇〇マニア】(cover) (2024).jpg"
+    "img": "/assets/CoverJacket/RDB2024-R2_Bubble_Mania.png"
   },
   {
     "title": "découragé (reimagined)",
     "artist": "cash ft. benedict koh",
     "tags": [
       "mixing",
-      "mastering"
+      "mastering",
+      "recording"
     ],
     "link": "https://www.youtube.com/watch?v=fTCUPd_Ybkc",
     "type": "youtube",
@@ -300,9 +301,10 @@
     "tags": [
       "immersive mixing",
       "Dolby Atmos",
-      "Apple Spatial Audio"
+      "Apple Spatial Audio",
+      "recording"
     ],
-    "link": null,
+    "link": "http://fanlink.tv/warmglow",
     "type": null,
     "embedId": null,
     "img": "/assets/CoverJacket/cash - cloudbursta warm glow.jpg"
@@ -315,7 +317,7 @@
       "Dolby Atmos",
       "Apple Spatial Audio"
     ],
-    "link": null,
+    "link": "https://fanlink.tv/elysiumRW",
     "type": null,
     "embedId": null,
     "img": "/assets/CoverJacket/cash - elysium (rewrite).jpg"
@@ -324,18 +326,18 @@
     "title": "Walled Citizen",
     "artist": "Sameer Qumsiyeh",
     "tags": [
-      "music composition",
-      "scoring",
-      "sound for picture"
+      "sound for picture",
+      "scoring"
     ],
-    "link": null,
-    "type": null,
-    "embedId": null,
-    "img": null,
+    "link": "https://youtu.be/wUp8uJ5LaGY",
+    "type": "youtube",
+    "embedId": "wUp8uJ5LaGY",
+    "img": "https://img.youtube.com/vi/wUp8uJ5LaGY/maxresdefault.jpg",
+    "description": "Despite living between walls and carrying one of the world’s weakest ranking passports, a Palestinian filmmaker attempts to travel the world in search for freedom.",
     "awards": [
-      "Palestine Cinema Days — Best Documentary (Nomination)",
-      "Terra di Tutti Film Festival — Winner",
-      "Al Ard Doc Film Festival — Winner"
+      "Palestine Cinema Days (2019) - Best Documentary (nomination)",
+      "Terra di Tutti Film Festival (2020) - Premio Storie di Giovanni Invisibili (winner)",
+      "Al Ard Doc Film Festival (2022) - Sardegna-Palestina Award (winner)"
     ]
   },
   {
@@ -347,7 +349,7 @@
     "link": "https://youtube.com/watch?v=x_pbxBoX1bU",
     "type": "youtube",
     "embedId": "x_pbxBoX1bU",
-    "img": null
+    "img": "/assets/CoverJacket/Pilgrim Raid - High Positive .jpg"
   },
   {
     "title": "Night Shines Words of U",
@@ -358,7 +360,7 @@
     "link": "https://dbeatdropdeadpowerhead.bandcamp.com/track/night-shines-words-of-u",
     "type": "bandcamp",
     "embedId": null,
-    "img": null
+    "img": "/assets/CoverJacket/Asian Glow - Night Shines Words of U.jpg"
   },
   {
     "title": "stratosphere",
@@ -369,7 +371,7 @@
     "link": "https://soundcloud.com/cash-official/stratosphere",
     "type": "soundcloud",
     "embedId": null,
-    "img": null
+    "img": "/assets/CoverJacket/cash - stratoshpere.jpg"
   },
   {
     "title": "i forgot your name",
@@ -380,19 +382,20 @@
     "link": "https://youtube.com/watch?v=8UmYuP4lk5I",
     "type": "youtube",
     "embedId": "8UmYuP4lk5I",
-    "img": null
+    "img": "/assets/CoverJacket/Rippedd - i forgot your name.jpg"
   },
   {
     "title": "Car Sick",
     "artist": "Benedict Koh",
     "tags": [
       "production",
-      "mixing"
+      "mixing",
+      "recording"
     ],
     "link": "https://open.spotify.com/album/7f8f81dbmitFMj1ABiH4vl?si=RPX8upzGRYyD2W4MDkfLlg",
     "type": "spotify",
     "embedId": "7f8f81dbmitFMj1ABiH4vl",
-    "img": null
+    "img": "/assets/CoverJacket/Benedict Koh - Car Sick.jpg"
   },
   {
     "title": "submerged ft EJEAN",
@@ -403,7 +406,7 @@
     "link": "https://soundcloud.com/cash-official/submerged-ft-ejean-bryan?in=cash-official/sets/deluged-lp/",
     "type": "soundcloud",
     "embedId": null,
-    "img": null
+    "img": "/assets/CoverJacket/cash - submerged ft EJEAN & Bryan Lu.jpg"
   },
   {
     "title": "broken record",
@@ -414,7 +417,7 @@
     "link": "https://open.spotify.com/album/30McfaQUd8NntZ5r4EsGvx?si=68uNWbNWT7mAYoDknV3mKA",
     "type": "spotify",
     "embedId": "30McfaQUd8NntZ5r4EsGvx",
-    "img": null
+    "img": "/assets/CoverJacket/cash, STACE, Bryan Lu - broken record.webp"
   },
   {
     "title": "Rose",
@@ -425,7 +428,7 @@
     "link": "https://soundcloud.com/artbyform/voka-cash-jasko-jian?in=cash-official/sets/rose-from-storybook-volume-2",
     "type": "soundcloud",
     "embedId": null,
-    "img": null
+    "img": "/assets/CoverJacket/cash, Jasko, jian, snowstorm & voka - Rose.jpg"
   },
   {
     "title": "one time girl",
@@ -436,50 +439,175 @@
     "link": "https://www.youtube.com/watch?v=sQPRbh_EoqY&list=RDsQPRbh_EoqY&start_radio=1",
     "type": "youtube",
     "embedId": "sQPRbh_EoqY",
-    "img": null
+    "img": "/assets/CoverJacket/soorinkimchi - one time girl (2025).jpg"
   },
   {
     "title": "Beauty and the Beast",
     "artist": "Jonas Cho",
     "tags": [
-      "mixing"
+      "mixing",
+      "recording"
     ],
     "link": "https://www.youtube.com/watch?v=eQYgRnKE1m4&list=RDeQYgRnKE1m4&start_radio=1",
     "type": "youtube",
     "embedId": "eQYgRnKE1m4",
-    "img": null
+    "img": "/assets/CoverJacket/Jonas Cho - Beauty and the Beast (2023).jpg"
   },
   {
     "title": "Inukshuk",
     "artist": "Benedict Koh",
     "tags": [
-      "mixing"
+      "mixing",
+      "recording"
     ],
     "link": "https://www.youtube.com/watch?v=SkeLbpP0jNU&list=RDSkeLbpP0jNU&start_radio=1",
     "type": "youtube",
     "embedId": "SkeLbpP0jNU",
-    "img": null
+    "img": "/assets/CoverJacket/Benedict Koh - Inukshuk (2023).jpg"
   },
   {
     "title": "Eigengrau",
     "artist": "Benedict Koh",
     "tags": [
-      "mixing"
+      "mixing",
+      "recording"
     ],
     "link": "https://www.youtube.com/watch?v=6tTblyikGnQ&list=RD6tTblyikGnQ&start_radio=1",
     "type": "youtube",
     "embedId": "6tTblyikGnQ",
-    "img": null
+    "img": "/assets/CoverJacket/Benedict Koh - Eigengrau (2023).jpg"
   },
   {
     "title": "Bolivia",
     "artist": "Ryota Sasaki",
     "tags": [
-      "mixing"
+      "mixing",
+      "recording"
     ],
     "link": "https://www.youtube.com/watch?v=pHjkW9ATYK8",
     "type": "youtube",
     "embedId": "pHjkW9ATYK8",
-    "img": null
+    "img": "/assets/CoverJacket/Ryota Sasaki - Bolivia (2021).jpg"
+  },
+  {
+    "title": "Loose Change",
+    "artist": "The Lunch Ladies",
+    "tags": [
+      "recording"
+    ],
+    "link": "https://open.spotify.com/track/7FtMh1eV8h8H2YvURQcsqZ?si=c83a7739ad094b18",
+    "type": "spotify",
+    "embedId": "7FtMh1eV8h8H2YvURQcsqZ",
+    "img": "/assets/CoverJacket/loosechange.jpg"
+  },
+  {
+    "title": "Over It",
+    "artist": "CARSONS",
+    "tags": [
+      "recording"
+    ],
+    "link": "https://open.spotify.com/album/450PLXgC44f8tybpN810Ib?si=1nVd89JzSH-pNfwscvxPJQ",
+    "type": "spotify",
+    "embedId": "450PLXgC44f8tybpN810Ib",
+    "img": "/assets/CoverJacket/CARSONS - Over It (2025)(AE).png"
+  },
+  {
+    "title": "Love Stays (Love Like You & Everything Stays Mashup)",
+    "artist": "Love Stays",
+    "tags": [
+      "recording"
+    ],
+    "link": "https://www.youtube.com/watch?v=QeQMOCyDpjs",
+    "type": "youtube",
+    "embedId": "QeQMOCyDpjs",
+    "img": "/assets/CoverJacket/lovestayssq.jpg"
+  },
+  {
+    "title": "Jelly & Cheese Sandwich",
+    "artist": "The Lunch Ladies",
+    "tags": [
+      "recording"
+    ],
+    "link": "https://youtube.com/watch?v=0_VjL2NJBgg",
+    "type": "youtube",
+    "embedId": "0_VjL2NJBgg",
+    "img": "/assets/CoverJacket/The Lunch Ladies - Jelly & Cheese Sandwich (2025).jpg"
+  },
+  {
+    "title": "Sonnet 71",
+    "artist": "Benedict Koh",
+    "tags": [
+      "recording"
+    ],
+    "link": "https://www.youtube.com/watch?v=PQSjUz4cblA&list=RDPQSjUz4cblA&start_radio=1",
+    "type": "youtube",
+    "embedId": "PQSjUz4cblA",
+    "img": "/assets/CoverJacket/Benedict Koh - Sonnet 71 (2024).jpg"
+  },
+  {
+    "title": "elysium",
+    "artist": "cash",
+    "tags": [
+      "recording"
+    ],
+    "link": "https://www.youtube.com/watch?v=_Gy8CX2oDA8&list=RD_Gy8CX2oDA8&start_radio=1",
+    "type": "youtube",
+    "embedId": "_Gy8CX2oDA8",
+    "img": "/assets/CoverJacket/cash - elysium (2024).jpg"
+  },
+  {
+    "title": "Nose Picker",
+    "artist": "The Lunch Ladies",
+    "tags": [
+      "recording"
+    ],
+    "link": "https://www.youtube.com/watch?v=BErcsZphpCs",
+    "type": "youtube",
+    "embedId": "BErcsZphpCs",
+    "img": "/assets/CoverJacket/The Lunch Ladies - Nose Picker (2024).webp"
+  },
+  {
+    "title": "Come & Go",
+    "artist": "Ava Panza",
+    "tags": [
+      "recording"
+    ],
+    "link": "https://open.spotify.com/album/7naM2I3muVeJ1oWw5hzitt?si=284e0a05dbcd4b65",
+    "type": "spotify",
+    "embedId": "7naM2I3muVeJ1oWw5hzitt",
+    "img": "/assets/CoverJacket/Ava Panza - Come & Go (2023)(AE).jpg"
+  },
+  {
+    "title": "Would You Be So Kind",
+    "artist": "Francesca Castro",
+    "tags": [
+      "recording"
+    ],
+    "link": "https://open.spotify.com/album/32TM0vWP7f20ghcfA1OVOh?si=ILjzrHdcQK6HNzqrvhTzAg",
+    "type": "spotify",
+    "embedId": "32TM0vWP7f20ghcfA1OVOh",
+    "img": "/assets/CoverJacket/Francesca Castro - Would You Be So Kind (2021)(AE).jpg"
+  },
+  {
+    "title": "Good Friday",
+    "artist": "Benedict Koh",
+    "tags": [
+      "recording"
+    ],
+    "link": "https://open.spotify.com/track/61bhyfBi4sZMN7viULXwIc?si=d9788aa5d55d448c",
+    "type": "spotify",
+    "embedId": "61bhyfBi4sZMN7viULXwIc",
+    "img": "/assets/CoverJacket/Benedict Koh - Good Friday (2021)(AE).jpg"
+  },
+  {
+    "title": "Kembangan Jam",
+    "artist": "Benedict Koh",
+    "tags": [
+      "recording"
+    ],
+    "link": "https://open.spotify.com/album/29FJwDTFDXdmrP7bZo78F8?si=WOu1iF7pTZqpRlC0Sd9m2Q",
+    "type": "spotify",
+    "embedId": "29FJwDTFDXdmrP7bZo78F8",
+    "img": "/assets/CoverJacket/Benedict Koh - Kembangan Jam (2021)(AE).jpg"
   }
 ]
