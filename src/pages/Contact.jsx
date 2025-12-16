@@ -84,6 +84,18 @@ export default function Contact() {
             </a>
           </p>
         </div>
+        
+        {/* Resume Button */}
+        <div className="pt-10">
+            <a 
+                href="https://drive.google.com/drive/folders/1YUiPXEADMOQeMbbwWSSpyWEIV0wkHrYF?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-medium text-sm tracking-wide hover:opacity-80 transition-opacity"
+            >
+                Download Resume / CV
+            </a>
+        </div>
 
         {/* Footer message */}
         <p className="mt-10 text-sm italic text-neutral-500 dark:text-neutral-400 max-w-md mx-auto leading-relaxed">

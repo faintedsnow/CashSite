@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
+import { Footer } from "./components/Footer";
 
 import Home from "./pages/Home";
 import Works from "./pages/Works";
@@ -38,9 +39,7 @@ export default function App() {
         </Routes>
       </div>
 
-      <footer className="border-t border-black/5 dark:border-white/5 py-8 text-center text-xs text-neutral-500 dark:text-neutral-400">
-        © {new Date().getFullYear()} Cash. All rights reserved.
-      </footer>
+      <Footer />
     </div>
   );
 }
