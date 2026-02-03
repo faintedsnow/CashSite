@@ -44,6 +44,17 @@
     "img": "/assets/CoverJacket/eclipse.xiv - PROPHECY (2025).png"
   },
   {
+    "title": "Rosemary",
+    "artist": "Porcelain Hearts",
+    "tags": [
+      "mastering"
+    ],
+    "link": "https://open.spotify.com/album/06kkKhg5kSJEw416kwrq2C",
+    "type": "spotify",
+    "embedId": "06kkKhg5kSJEw416kwrq2C",
+    "img": "/assets/CoverJacket/Porcelain Hearts - Rosemary.jpg"
+  },
+  {
     "title": "Apiary",
     "artist": "gingerbee",
     "tags": [
