@@ -1,5 +1,18 @@
 [
   {
+    "title": "Everything",
+    "artist": "Annie Elise",
+    "tags": [
+      "sound design",
+      "production",
+      "co-production"
+    ],
+    "link": "https://open.spotify.com/album/267ACiPXqHuCPL0e1VqiqO",
+    "type": "spotify",
+    "embedId": "267ACiPXqHuCPL0e1VqiqO",
+    "img": "/assets/CoverJacket/Annie Elise - Everything.jpg"
+  },
+  {
     "title": "mariposa.",
     "artist": "glumroll",
     "tags": [
