@@ -7,6 +7,7 @@ import {
   useMotionValue,
   useVelocity,
   useSpring,
+  useReducedMotion,
 } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -15,30 +16,42 @@ import { Link } from "react-router-dom";
 ----------------------------------------- */
 function MouseTrail() {
   const [trail, setTrail] = useState([]);
-  const [isVisible, setIsVisible] = useState(true);
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
+  const prefersReducedMotion = useReducedMotion();
+  const animationFrame = useRef(null);
+  const latestPoint = useRef(null);
+  const removalTimers = useRef(new Set());
 
   useEffect(() => {
+    if (prefersReducedMotion) return undefined;
+
     const handleMove = (e) => {
-      setIsVisible(true);
-      mouseX.set(e.clientX);
-      mouseY.set(e.clientY);
+      latestPoint.current = { x: e.clientX, y: e.clientY };
+      if (animationFrame.current) return;
 
-      const id = `${Date.now()}-${Math.random()}`;
-      setTrail((prev) => [
-        ...prev.slice(-15),
-        { id, x: e.clientX, y: e.clientY },
-      ]);
+      animationFrame.current = requestAnimationFrame(() => {
+        animationFrame.current = null;
+        const point = latestPoint.current;
+        const id = `${performance.now()}-${Math.random()}`;
+        setTrail((prev) => [...prev.slice(-11), { id, ...point }]);
 
-      setTimeout(() => {
-        setTrail((prev) => prev.filter((p) => p.id !== id));
-      }, 500);
+        const timer = setTimeout(() => {
+          setTrail((prev) => prev.filter((p) => p.id !== id));
+          removalTimers.current.delete(timer);
+        }, 500);
+        removalTimers.current.add(timer);
+      });
     };
 
     window.addEventListener("mousemove", handleMove);
-    return () => window.removeEventListener("mousemove", handleMove);
-  }, [mouseX, mouseY]);
+    return () => {
+      window.removeEventListener("mousemove", handleMove);
+      if (animationFrame.current) cancelAnimationFrame(animationFrame.current);
+      removalTimers.current.forEach(clearTimeout);
+      removalTimers.current.clear();
+    };
+  }, [prefersReducedMotion]);
+
+  if (prefersReducedMotion) return null;
 
   return (
     <div className="pointer-events-none fixed inset-0 z-[60] overflow-hidden">
@@ -61,12 +74,12 @@ function MouseTrail() {
 ----------------------------------------- */
 function DraggableGallery() {
   const images = [
-    "studiophoto.webp",
+    "studiophoto.jpg",
     "studiophoto1.webp",
     "studiophoto2.webp",
-    "studiophoto3.webp",
+    "studiophoto3.JPG",
     "studiophoto4.webp",
-    "studiophoto5.webp",
+    "studiophoto5.jpg",
   ];
 
   const x = useMotionValue(0);
@@ -128,6 +141,7 @@ function GalleryItem({ img, i }) {
         src={`/assets/home/${img}`}
         alt={`Studio ${i}`}
         loading="lazy"
+        decoding="async"
         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 pointer-events-none"
       />
       <div className="absolute bottom-6 left-6 bg-black/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -193,6 +207,7 @@ export default function Home() {
               key="hero-image"
               src="/assets/assets/cash image.jpg"
               alt="Hero Background"
+              fetchPriority="high"
               className="w-full h-full object-cover opacity-60"
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.6 }}

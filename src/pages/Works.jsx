@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import portfolioData from "../data/portfolio_full.json";
-import { LuX, LuExternalLink, LuPlus } from "react-icons/lu";
+import { LuX, LuExternalLink } from "react-icons/lu";
 import AsciiText from "../components/AsciiText";
 
 /* -----------------------------------------
@@ -40,6 +40,7 @@ function EmbedPlayer({ work }) {
         allowFullScreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
+        title={`${work.title} on Spotify`}
         className={iframeStyle}
       />
     );
@@ -56,6 +57,7 @@ function EmbedPlayer({ work }) {
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
+          loading="lazy"
         />
       </div>
     );
@@ -190,7 +192,9 @@ export default function Works() {
                   {work.img ? (
                     <img
                       src={work.img}
+                      alt={`${work.title} by ${work.artist}`}
                       loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover grayscale-[100%] contrast-[1.1] brightness-[1.1] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
                     />
                   ) : (
@@ -250,7 +254,9 @@ export default function Works() {
                   {selectedWork.img ? (
                     <img
                       src={selectedWork.img}
+                      alt={`${selectedWork.title} by ${selectedWork.artist}`}
                       loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   ) : (
@@ -262,7 +268,9 @@ export default function Works() {
                   <div className="absolute inset-0 overflow-hidden opacity-30 dark:opacity-10 blur-3xl pointer-events-none">
                     <img
                       src={selectedWork.img}
+                      alt=""
                       loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover scale-150"
                     />
                   </div>

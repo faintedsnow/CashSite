@@ -1,15 +1,15 @@
 // src/App.jsx
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
 import { Footer } from "./components/Footer";
 
-import Home from "./pages/Home";
-import Works from "./pages/Works";
-import Contact from "./pages/Contact";
-import Music from "./pages/music";
-import Performance from "./pages/Performance";
-import Store from "./pages/Store";
+const Home = lazy(() => import("./pages/Home"));
+const Works = lazy(() => import("./pages/Works"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Music = lazy(() => import("./pages/music"));
+const Performance = lazy(() => import("./pages/Performance"));
+const Store = lazy(() => import("./pages/Store"));
 
 export default function App() {
   const [dark, setDark] = useState(false);
@@ -29,14 +29,23 @@ export default function App() {
     >
       <NavBar dark={dark} setDark={setDark} />
       <div className="flex-1">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/works" element={<Works />} />
-          <Route path="/music" element={<Music />} />
-          <Route path="/performance" element={<Performance />} />
-          <Route path="/store" element={<Store />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Suspense
+          fallback={
+            <div
+              className="min-h-screen bg-white dark:bg-black"
+              aria-label="Loading page"
+            />
+          }
+        >
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/works" element={<Works />} />
+            <Route path="/music" element={<Music />} />
+            <Route path="/performance" element={<Performance />} />
+            <Route path="/store" element={<Store />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Suspense>
       </div>
 
       <Footer />

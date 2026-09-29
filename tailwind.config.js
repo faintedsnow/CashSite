@@ -5,8 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "Noto Sans JP", "system-ui", "sans-serif"], // ✅ navbar font
-        libre: ['"Libre Baskerville"', "serif"], // for titles/body
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
     },
   },
