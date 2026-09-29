@@ -104,6 +104,20 @@ const CATEGORIES = [
   { id: "recording", label: "Recording", keywords: ["recording"] },
 ];
 
+function getGridImage(src) {
+  if (!src) return src;
+
+  if (src.startsWith("/assets/CoverJacket/")) {
+    return src.replace(/\.[^.]+$/, "-thumb.jpg");
+  }
+
+  if (src.includes("img.youtube.com")) {
+    return src.replace("maxresdefault.jpg", "hqdefault.jpg");
+  }
+
+  return src;
+}
+
 /* -----------------------------------------
    Works Page Component
 ----------------------------------------- */
@@ -191,10 +205,13 @@ export default function Works() {
                 <div className="relative aspect-square overflow-hidden rounded-md bg-neutral-100 dark:bg-neutral-900 shadow-sm transition-all duration-500 group-hover:shadow-md">
                   {work.img ? (
                     <img
-                      src={work.img}
+                      src={getGridImage(work.img)}
                       alt={`${work.title} by ${work.artist}`}
-                      loading="lazy"
+                      loading={i < 4 ? "eager" : "lazy"}
+                      fetchPriority={i < 4 ? "high" : "low"}
                       decoding="async"
+                      width="480"
+                      height="480"
                       className="w-full h-full object-cover grayscale-[100%] contrast-[1.1] brightness-[1.1] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
                     />
                   ) : (

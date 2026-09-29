@@ -131,6 +131,8 @@ function DraggableGallery() {
 }
 
 function GalleryItem({ img, i }) {
+  const imageBase = img.replace(/\.[^.]+$/, "");
+
   return (
     <motion.div
       className="relative w-[80vw] md:w-[600px] h-[50vh] md:h-[60vh] rounded-2xl overflow-hidden bg-neutral-900 shadow-2xl border border-white/5 group"
@@ -139,9 +141,13 @@ function GalleryItem({ img, i }) {
     >
       <img
         src={`/assets/home/${img}`}
+        srcSet={`/assets/home/${imageBase}-640.jpg 640w, /assets/home/${imageBase}-1200.jpg 1200w`}
+        sizes="(min-width: 768px) 600px, 80vw"
         alt={`Studio ${i}`}
         loading="lazy"
         decoding="async"
+        width="1200"
+        height="900"
         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 pointer-events-none"
       />
       <div className="absolute bottom-6 left-6 bg-black/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -205,9 +211,14 @@ export default function Home() {
           <AnimatePresence mode="wait">
             <motion.img
               key="hero-image"
-              src="/assets/assets/cash image.jpg"
+              src="/assets/assets/cash-hero-1280.jpg"
+              srcSet="/assets/assets/cash-hero-640.jpg 640w, /assets/assets/cash-hero-1280.jpg 1280w"
+              sizes="100vw"
               alt="Hero Background"
               fetchPriority="high"
+              decoding="async"
+              width="1280"
+              height="720"
               className="w-full h-full object-cover opacity-60"
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.6 }}
